@@ -1,0 +1,21 @@
+name: SimpleCustomMobs
+version: '${project.version}'
+main: me.evanf.simplecustommobs.SimpleCustomMobs
+api-version: 1.19
+authors: [ EvanFarnping ]
+description: A relatively simple plugin that can spawn various mobs with configurable options
+
+commands:
+  spawncustomspider:
+    aliases: [ scspider ]
+    description: /scspider to spawn the custom spider
+  spawncustomwitherskeleton:
+    aliases: [ scwitherskeleton ]
+    description: /scwitherskeleton to spawn the custom wither skeleton
+  spawncustomillusioner:
+    aliases: [ scillusioner ]
+    description: /scillusioner to spawn the custom illusioner
+
+permissions:
+  custom_spawn_permissions.power:
+    default: op

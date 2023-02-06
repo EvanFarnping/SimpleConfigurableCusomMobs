@@ -1,0 +1,148 @@
+custom_spawn_permissions: true # If false, anyone can use the commands (OP by default, perms can be given)
+
+### Illusioner Mob ###
+illusioner_name: "Custom Illusioner" # Edit this to change the name
+natural_illusioner_spawning:
+  enable_spawn: true # Enable naturally spawning
+  spawn_number: 50 # 1 out of 'spawn_number' chance of spawning per illager spawning
+  disable_spawner: true # Enable to prevent custom illusioner from spawning from spawners
+illusioner_stats:
+  # NOTE: 0 can be used to disable stats (unless state otherwise)
+  health: 50 # If less than 1, health will be set at 1
+  speed: 1 # Can be negative if you want the speed to be slower than normal
+  regen: 2 # Negative values will not work (will be treated as positive)
+  resistance: 0 # Negative values will not work (will be treated as positive)
+  strength: 1 # Negative values will not work (will be treated as positive)
+  jump: 0 # Negative values will not work (will be treated as positive)
+  max_targeting_distance: 20 # The max distance the mob will target you on the x, y, and z axis
+illusioner_custom_drops:
+  enable_drop: true # Enable special item drop
+  clear_vanilla: false # Clear vanilla drops
+  staff_of_pots: # When right-clicked, spew out a spread of random negative splash potions in the direction you are looking
+    drop_chance: 25 # 1 out of 'drop_chance' chance of dropping on mob death (MUST BE POSITIVE)
+    cool_down: 30 # Cool-down is in seconds
+    amount: 15 # Amount of splash potions that shoot out
+    velocity: 2.5 # The speed in which the cobwebs are shot out
+illusioner_abilities:
+  confusion:
+    enable: true # Enable this ability
+    chance: 5 # 1 out of 'chance' chance of occurring when dealing damage to the mob (MUST BE POSITIVE)
+    duration: 200 # Value is in ticks (20 ticks = 1 second)
+    strength: 2 # Strength of confusion ability, the higher the number, the more confusion dealt
+  poison:
+    enable: true # Enable this ability
+    chance: 20 # 1 out of 'chance' chance of occurring when dealing damage to the mob (MUST BE POSITIVE)
+    duration: 200 # Value is in ticks (20 ticks = 1 second)
+    strength: 1 # Strength of poison ability, the higher the number, the more poison damage the mob will do when attacked
+  slowness:
+    enable: true # Enable this ability
+    chance: 15 # 1 out of 'chance' chance of occurring when dealing damage to the mob (MUST BE POSITIVE)
+    duration: 200 # Value is in ticks (20 ticks = 1 second)
+    strength: 2 # Strength of slowness ability, the higher the number, the more slowness dealt
+  levitation:
+    enable: true # Enable this ability
+    chance: 25 # 1 out of 'chance' chance of occurring when dealing damage to the mob (MUST BE POSITIVE)
+    duration: 200 # Value is in ticks (20 ticks = 1 second)
+    strength: 1 # Strength of levitation ability, the higher the number, the more levitation dealt
+  hunger:
+    enable: true # Enable this ability
+    chance: 10 # 1 out of 'chance' chance of occurring when dealing damage to the mob (MUST BE POSITIVE)
+    duration: 200 # Value is in ticks (20 ticks = 1 second)
+    strength: 1 # Strength of hunger ability, the higher the number, the more hunger dealt
+  absorption:
+    enable: true # Enable this ability
+    chance: 30 # 1 out of 'chance' chance of occurring when dealing damage to the mob (MUST BE POSITIVE)
+    duration: 10 # Value is in ticks (20 ticks = 1 second)
+    strength: 1 # Strength of absorption ability, the higher the number, the more HP the mob will recover when dealt damage
+  deflect:
+    enable: true # Enable this ability
+    chance: 35 # 1 out of 'chance' chance of completing negating the player's damage (MUST BE POSITIVE)
+
+### Spider Mob ###
+spider_name: "Custom Spider" # Edit this to change the name
+natural_spider_spawning:
+  enable_spawn: true # Enable naturally spawning
+  spawn_number: 50 # 1 out of 'spawn_number' chance of spawning per spider
+  disable_spawner: true # Enable to prevent custom spider from spawning from spawners
+spider_stats:
+  # NOTE: 0 can be used to disable stats (unless state otherwise)
+  health: 50 # If less than 1, health will be set at 1
+  speed: 2 # Can be negative if you want the speed to be slower than normal
+  regen: 0 # Negative values will not work (will be treated as positive)
+  resistance: 0 # Negative values will not work (will be treated as positive)
+  strength: 1 # Negative values will not work (will be treated as positive)
+  jump: 0 # Negative values will not work (will be treated as positive)
+  max_targeting_distance: 20 # The max distance the mob will target you on the x, y, and z axis
+spider_custom_drops:
+  enable_drop: true # Enable special item drop
+  clear_vanilla: false # Clear vanilla drops
+  staff_of_webs: # When right-clicked, spew out a spread of cobwebs in the direction you are looking
+    drop_chance: 20 # 1 out of 'drop_chance' chance of dropping on mob death (MUST BE POSITIVE)
+    cool_down: 30 # Cool-down is in seconds
+    amount: 15 # Amount of cobwebs that shoot out
+    velocity: 2.5 # The speed in which the cobwebs are shot out
+spider_abilities:
+  vampire:
+    enable: true # Enable this ability
+    chance: 10 # 1 out of 'chance' chance of occurring when dealing damage to the player (MUST BE POSITIVE)
+    duration: 10 # Value is in ticks (20 ticks = 1 second)
+    strength: 1 # Strength of vampire ability, the higher the number, the more life the mob will heal when dealing damage
+  venom:
+    enable: true # Enable this ability
+    chance: 20 # 1 out of 'chance' chance of occurring when dealing damage to the player (MUST BE POSITIVE)
+    duration: 100 # Value is in ticks (20 ticks = 1 second)
+    strength: 3 # Strength of venom ability, the higher the number, the more poison damage the mob will do when attacking the player
+  hard_shell:
+    enable: true # Enable this ability
+    chance: 25 # 1 out of 'chance' chance of completing negating the player's damage (MUST BE POSITIVE)
+
+### Wither Skeleton Mob ###
+witherskeleton_name: "Custom Wither Skeleton" # Edit this to change the name
+natural_witherskeleton_spawning:
+  enable_spawn: true # Enable naturally spawning
+  spawn_number: 50 # 1 out of 'spawn_number' chance of spawning per skeleton
+  disable_spawner: true # Enable to prevent custom wither skeleton from spawning from spawners
+witherskeleton_stats:
+  # NOTE: 0 can be used to disable stats (unless state otherwise)
+  health: 50 # If less than 1, health will be set at 1
+  speed: 2 # Can be negative if you want the speed to be slower than normal
+  resistance: 1 # Negative values will not work (will be treated as positive)
+  strength: 1 # Negative values will not work (will be treated as positive)
+  jump: 0 # Negative values will not work (will be treated as positive)
+  max_targeting_distance: 20 # The max distance the mob will target you on the x, y, and z axis
+witherskeleton_custom_drops:
+  enable_drop: true # Enable special item drop
+  clear_vanilla: false # Force custom item drops only
+  axe_of_withering: # Has a chance to deal withering damage on hit
+    drop_chance: 50 # 1 out of 'drop_chance' chance of dropping on mob death (MUST BE POSITIVE)
+    effect_chance: 20 # 1 out of 'effect_chance' chance of occurring when dealing damage (MUST BE POSITIVE)
+    duration: 100 # Duration of the bonus withering damage
+    strength: 1 # Strength of the bonus withering damage (MUST BE POSITIVE)
+witherskeleton_abilities:
+  leech_life:
+    enable: true # Enable this ability
+    chance: 10 # 1 out of 'chance' chance of occurring when dealing damage to the player (MUST BE POSITIVE)
+    duration: 10 # Value is in ticks (20 ticks = 1 second)
+    strength: 1 # Strength of leech_life ability, the higher the number, the more life the mob will heal when dealing damage
+  deep_withering:
+    enable: true # Enable this ability
+    chance: 20 # 1 out of 'chance' chance of occurring when dealing damage to the player (MUST BE POSITIVE)
+    duration: 100 # Value is in ticks (20 ticks = 1 second)
+    strength: 3 # Strength of wither ability, the higher the number, the more wither damage the mob will do when attacking the player
+  blindness:
+    enable: true # Enable this ability
+    chance: 25 # 1 out of 'chance' chance of occurring when dealing damage to the player (MUST BE POSITIVE)
+    duration: 100 # Value is in ticks (20 ticks = 1 second)
+    strength: 3 # Strength of blindness ability, the higher the number, the more blindness the mob will do when attacking the player
+  hard_bones:
+    enable: true # Enable this ability
+    chance: 30 # 1 out of 'chance' chance of completing negating the player's damage (MUST BE POSITIVE)
+witherskeleton_equipment:
+  # If you want to remove an item, simply set it as blank
+  # The proper format is all capital letters with underscores as spaces, i.e., GOLDEN_SWORD
+  main_hand: NETHERITE_AXE
+  off_hand: SHIELD
+  helmet: NETHERITE_HELMET
+  chestplate: NETHERITE_CHESTPLATE
+  leggings: NETHERITE_LEGGINGS
+  boots: NETHERITE_BOOTS
